@@ -13,7 +13,7 @@ pipeline {
          sh '''
          pwd
          cd azure-vote/
-         docker images -a
+         docker images
          docker build -t jenkins-pipeline .
          docker images -a
          cd ..'''
